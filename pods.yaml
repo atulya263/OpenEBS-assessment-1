@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: assesment
+ labels:
+  app: assesment
+spec:
+ containers:
+  - name: assesment
+    image: docker.io/atulya263/assesment:v1
+    ports:
+     - containerPort: 80

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: assesment
+spec:
+  replicas: 1
+  template:
+   metadata:
+    labels:
+      app: assesment
+   spec:
+     containers:
+       - name: assesment-container
+         image: docker.io/atulya263/assesment
+         ports:
+          - containerPort: 80
